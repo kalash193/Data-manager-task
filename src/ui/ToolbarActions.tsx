@@ -19,7 +19,8 @@ export default function ToolbarActions({ onOpenColumns, search, onSearch }: any)
     Papa.parse(file, {
       header: true,
       skipEmptyLines: true,
-      complete: (res) => {
+     complete: (res: Papa.ParseResult<any>) => {
+
         if (res.data) {
           const data = (res.data as any[]).map(r =>
             ({ ...r, id: String(Math.random()).slice(2) })
