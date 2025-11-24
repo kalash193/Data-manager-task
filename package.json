@@ -1,4 +1,7 @@
 {
+  "type": "module"
+}
+{
   "name": "dynamic-data-table-core",
   "version": "1.0.0",
   "private": true,
